@@ -50,7 +50,11 @@ export default function Home() {
         {/* Grille de ventilación militar-industrial */}
         <div className="bg-zinc-800 border-t-4 border-zinc-600 px-6 py-3 flex items-center justify-end">
           <div className="size-6 bg-gray-500 flex items-center justify-center shadow-lg p-4 rounded-sm">
-            <a href="/TO-REPO" target="_blank" className="text-gray-900">
+            <a
+              href="https://github.com/arian457/arian-cejas-portafolio-v1"
+              target="_blank"
+              className="text-gray-900"
+            >
               <Github size={24} />
             </a>
           </div>
