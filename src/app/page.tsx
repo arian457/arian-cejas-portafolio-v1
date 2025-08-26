@@ -3,7 +3,7 @@ import { Github } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="via-black p-4 relative h-screen">
+    <div className="bg-zinc-900 via-black p-4 relative h-screen">
       <div
         className="rounded-2xl h-[90vh] flex flex-col border-8 shadow-2xl w-full max-w-7xl mx-auto mt-8 relative border-zinc-800"
         style={{
@@ -15,14 +15,14 @@ export default function Home() {
       >
         {/* Efecto de bordes metálicos */}
         <div
-          className="absolute inset-0 pointer-events-none"
+          className="absolute inset-0 pointer-events-none rounded-2xl"
           style={{
             boxShadow:
-              'inset 0 0 30px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.05)',
+              'inset 0 30px 30px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.05)',
           }}
         />
         {/* Barra de título militar-industrial */}
-        <div className="flex items-center justify-between bg-gradient-to-r from-zinc-800 to-zinc-800 px-6 py-4 border-b-4 border-gray- relative">
+        <div className="flex items-center justify-between bg-gradient-to-r from-zinc-800 to-zinc-800 px-6 py-4 border-b-4 border-gray-800 relative">
           {/* Efecto de scanlines en la barra */}
           <div className="absolute inset-0 pointer-events-none opacity-15">
             <div
@@ -48,14 +48,10 @@ export default function Home() {
         <Terminal />
 
         {/* Grille de ventilación militar-industrial */}
-        <div className="bg-zinc-800 border-t-2 border-zinc-600 px-6 py-3 flex items-center justify-end">
-          <div className="size-6 bg-gray-500 border-gray-400 flex items-center justify-center shadow-lg p-4 rounded-sm">
-            <a
-              href="/TO-REPO"
-              target="_blank"
-              className="text-gray-900 text-sm font-bold"
-            >
-              <Github />
+        <div className="bg-zinc-800 border-t-4 border-zinc-600 px-6 py-3 flex items-center justify-end">
+          <div className="size-6 bg-gray-500 flex items-center justify-center shadow-lg p-4 rounded-sm">
+            <a href="/TO-REPO" target="_blank" className="text-gray-900">
+              <Github size={24} />
             </a>
           </div>
         </div>
