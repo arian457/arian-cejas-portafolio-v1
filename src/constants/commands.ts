@@ -15,10 +15,9 @@ export const availableCommands: Command[] = [
     path: 'C:/PORTAFOLIO',
     commands: [
       {
-        command: 'REDES',
-        commandResult:
-          '- LINKEDIN: https://www.linkedin.com/in/arian-cejas/ \n' +
-          '- GITHUB: https://github.com/arian457 \n',
+        command: 'PROYECTOS',
+        commandResult: '',
+        navigateTo: 'C:/PORTAFOLIO/PROYECTOS',
       },
       {
         command: 'TECNOLOGIAS',
@@ -31,9 +30,10 @@ export const availableCommands: Command[] = [
           '- MYSQL \n',
       },
       {
-        command: 'PROYECTOS',
-        commandResult: '',
-        navigateTo: 'C:/PORTAFOLIO/PROYECTOS',
+        command: 'REDES',
+        commandResult:
+          '- LINKEDIN: https://www.linkedin.com/in/arian-cejas/ \n' +
+          '- GITHUB: https://github.com/arian457 \n',
       },
     ],
   },
